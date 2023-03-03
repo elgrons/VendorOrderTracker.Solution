@@ -2,7 +2,7 @@
 
 #### By Eliot Gronstal
 
-#### 🚚 🥖 _A MVC application to help a baker track the vendors that purchase baked goods from them and the orders belonging to those vendors. Independent Code Review for Week 2 of C# at Epicodus Coding School._ 🚚 🥖
+#### 🚚 🥖 _A MVC application to help a bakery track the vendors that purchase baked goods from them and the orders belonging to those vendors. Independent Code Review for Week 2 of C# at Epicodus Coding School._ 🚚 🥖
 
 ## Technologies Used
 
@@ -15,7 +15,7 @@
 
 ## Description
 
-A MVC application to help a baker track the vendors that purchase baked goods from them and the orders belonging to those vendors.
+A MVC application to help a bakery track the vendors that purchase baked goods from them and the orders belonging to those vendors.
 
 This project:
 
@@ -25,13 +25,13 @@ This project:
 
 * 🛒 _Has an Order class. This class includes properties for the title, the description, the price, and the date._
 
-* 🛒 _The homepage of the app at the root path [localhost:5000/] is be a splash page welcoming the baker and providing them with a link to a Vendors page._
+* 🛒 _The homepage of the app at the root path [localhost:5000/] is be a splash page welcoming the bakery and providing them with a link to a Vendors page._
 
-* 🛒 _The vendors page contains a link to a page presenting the baker with a form they can fill out to create a new Vendor. After the form is submitted, the new Vendor object should be saved into a static List and the baker should be routed back to the homepage._
+* 🛒 _The vendors page contains a link to a page presenting the bakery with a form they can fill out to create a new Vendor. After the form is submitted, the new Vendor object should be saved into a static List and the baker should be routed back to the homepage._
 
-* 🛒 _The baker is able to click a Vendor's name and go to a new page that will display all of that Vendor's orders._
+* 🛒 _The bakery is able to click a Vendor's name and go to a new page that will display all of that Vendor's orders._
 
-* 🛒 _The baker is provided with a link to a page presenting them with a form to create a new Order for a particular Vendor._
+* 🛒 _The bakery is provided with a link to a page presenting them with a form to create a new Order for a particular Vendor._
 
 ## Setup/Installation Requirements
 
@@ -50,7 +50,7 @@ This project:
 
 ## Known Bugs
 
-* 📋 _Any known issues_
+* 📋 _N/A_
 
 * 📋 _Please reach out with any questions or concerns to [eliot.lauren@gmail.com](eliot.lauren@gmail.com)_
 
