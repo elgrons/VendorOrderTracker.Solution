@@ -20,7 +20,7 @@ namespace VendorOrderTracker.Controllers
       return RedirectToAction("Index");
     }
 
-    [HttpGet("/items/new")]
+    [HttpGet("/orders/new")]
     public ActionResult New()
     {
       return View();
