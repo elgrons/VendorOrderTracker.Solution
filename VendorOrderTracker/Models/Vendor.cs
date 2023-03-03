@@ -3,25 +3,39 @@ using System;
 
 namespace VendorOrderTracker.Models
 {
-  public class ClassName
+  public class Vendor 
   {
-    private int _side1;
-    public int Side1
-    {
-      get { return _side1; }
-      set { _side1 = value; }
-    }
-    public int Side2 { get; set; }
-    private int _side3;
-    private static List<ClassName> _instances = new List<ClassName> {};
+    private static List<Vendor> _instances = new List<Vendor> {};
+    public string Name { get; set; }
 
-    public ClassName(int length1, int length2, int length3)
+    public string Description { get; set; }
+
+    public int Id { get; }
+
+    public List<Order> Orders { get; set; }
+
+    public Vendor (string vendorName, string vendorDescription)
     {
-      _side1 = length1;
-      Side2 = length2;
-      _side3 = length3;
+      Name = vendorName;
+      Description = vendorDescription;
       _instances.Add(this);
+      Id = _instances.Count;
+      Orders = new List<Order>{};
     }
 
+    public static Vendor Find(int searchId)
+    {
+      return _instances[searchId-1];
+    }
+
+    public static void ClearAll()
+    {
+      _instances.Clear();
+    }
+
+    public static List<Vendor> GetAll()
+    {
+      return _instances;
+    }
   }
 }
