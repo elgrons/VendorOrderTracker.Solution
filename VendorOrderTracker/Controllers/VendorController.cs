@@ -5,7 +5,7 @@ using VendorOrderTracker.Models;
 
 namespace VendorOrderTracker.Controllers
 {
-  public class VendorsController : Controller
+  public class VendorController : Controller
   {
     [HttpGet("/vendors")]
     public ActionResult Index()
@@ -38,19 +38,18 @@ namespace VendorOrderTracker.Controllers
       return View(model);
     }
 
-    // [HttpPost("/vendor/{vendorId}/orders")]
-    // public ActionResult Create(int vendorId, string orderTitle)
-    // {
-    //   Dictionary<string, object> model = new Dictionary<string, object>();
-    //   Vendor foundVendor = Vendor.Find(vendorId);
-    //   Order newOrder = new Order(orderTitle, orderDescription, orderPrice, orderDate);
-    //   foundVendor.AddOrder(newOrder);
-    //   List<Order> VendorOrders = foundVendor.Orders;
-    //   model.Add("orders", VendorOrders);
-    //   model.Add("vendor", foundVendor);
-    //   return View("Show", model);
-    // }
-
+    [HttpPost("/vendor/{vendorId}/orders")]
+    public ActionResult Create(int vendorId, string orderTitle, string orderDescription, int orderPrice, string orderDate)
+    {
+      Dictionary<string, object> model = new Dictionary<string, object>();
+      Vendor foundVendor = Vendor.Find(vendorId);
+      Order newOrder = new Order(orderTitle, orderDescription, orderPrice, orderDate);
+      foundVendor.AddOrder(newOrder);
+      List<Order> VendorOrders = foundVendor.Orders;
+      model.Add("orders", VendorOrders);
+      model.Add("vendor", foundVendor);
+      return View("Show", model);
+    }
 
   }
 }
