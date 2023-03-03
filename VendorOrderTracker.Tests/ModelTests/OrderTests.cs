@@ -151,6 +151,23 @@ namespace VendorOrderTracker.Tests
       CollectionAssert.AreEqual(newList, result);
     }
 
+    [TestMethod]
+    public void Find_ReturnsCorrectOrder_Order()
+    {
+      string title1 = "Order Title1";
+      string title2 = "Order Title2";
+      string description1 = "Bread";
+      string description2 = "Crossaints";
+      int price1 = 100;
+      int price2 = 2000;
+      string date1 = "Thursday";
+      string date2 = "Monday";
+      Order newOrder1 = new Order(title1, description1, price1, date1);
+      Order newOrder2 = new Order(title2, description2, price2, date2); 
+      Order result = Order.Find(2);
+      Assert.AreEqual(newOrder2, result);
+    }
+
 
 
   }
