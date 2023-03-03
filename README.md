@@ -1,19 +1,37 @@
-# _{Application Name}_
+# _Vendor & Order Tracker_
 
 #### By Eliot Gronstal
 
-#### _{Brief description of application}_
+#### _A MVC application to help a baker track the vendors that purchase baked goods from them and the orders belonging to those vendors. Independent Code Review for Week 2 of C# at Epicodus Coding School._
 
 ## Technologies Used
 
 * _C#_
 * _.NET_
-* _you used in your project_
-* _here_
+* _MSTest_
+* _HTML_
+* _CSS_
+* _Razor_
 
 ## Description
 
-_{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
+A MVC application to help a baker track the vendors that purchase baked goods from them and the orders belonging to those vendors.
+
+This project:
+
+* _Uses Razor to display information on each page._
+
+* _Has a Vendor class. This class includes properties for the vendor's name, a description of the vendor, a List of Orders belonging to the vendor._
+
+* _Has an Order class. This class includes properties for the title, the description, the price, and the date._
+
+* _The homepage of the app at the root path [localhost:5000/] is be a splash page welcoming the baker and providing them with a link to a Vendors page._
+
+* _The vendors page contains a link to a page presenting the baker with a form they can fill out to create a new Vendor. After the form is submitted, the new Vendor object should be saved into a static List and the baker should be routed back to the homepage._
+
+* _The baker is able to click a Vendor's name and go to a new page that will display all of that Vendor's orders._
+
+* _The baker is provided with a link to a page presenting them with a form to create a new Order for a particular Vendor._
 
 ## Setup/Installation Requirements
 
@@ -26,7 +44,7 @@ _{This is a detailed description of your application. Give as much detail as nee
 
 ## Test Instructions
 
-* _Using a shell program, navigate from the root directory, "ClassName.Solution," to the "ClassName.Tests" directory._
+* _Using a shell program, navigate from the root directory, "VendorandOrderTracker.Solution," to the "ClassName.Tests" directory._
 * _Once in the "ClassName.Tests" directory, type ``dotnet restore`` into the console._
 * _After the restore process is complete, type ``dotnet test`` into the console. This will run all written tests and display the test results into the console to review._
 
