@@ -13,7 +13,7 @@ namespace VendorOrderTracker.Tests
     {
       Vendor.ClearAll();
     }
-    
+
     [TestMethod]
     public void VendorConstructor_CreateInstanceofVendor_Vendor()
     {
@@ -50,9 +50,5 @@ namespace VendorOrderTracker.Tests
       int result = newVendor.Id;
       Assert.AreEqual(1, result);
     }
-
-
-
-
   }
 }
