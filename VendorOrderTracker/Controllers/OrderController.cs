@@ -41,7 +41,7 @@ namespace VendorOrderTracker.Controllers
       return View(foundOrder);
     }
 
-    [HttpGet("/vendor/{vendorId}/orders/{orderId}")]
+    [HttpGet("/vendors/{vendorId}/orders/{orderId}")]
     public ActionResult Show(int vendorId, int orderId)
     {
       Order order = Order.Find(orderId);
