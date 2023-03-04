@@ -44,7 +44,7 @@ This project:
 
 ## Test Instructions
 
-* 🗄️ _Using a shell program, navigate from the root directory, "VendorandOrderTracker.Solution," to the "VendorOrderTracker.Tests" directory._
+* 🗄️ _Using a shell program, navigate from the root directory, "VendorOrderTracker.Solution," to the "VendorOrderTracker.Tests" directory._
 * 🗄️ _Once in the "VendorOrderTracker.Tests" directory, type ``dotnet restore`` into the console._
 * 🗄️ _After the restore process is complete, type ``dotnet test`` into the console. This will run all written tests and display the test results into the console to review._
 
